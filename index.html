@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nombre del Juego - MS47</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0e0e0e;
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  width:100%;
+  background:#111;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-shadow:0 2px 15px black;
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  text-shadow:0 0 10px red;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ff0000;
+}
+
+/* ===== CONTENIDO ===== */
+main{
+  margin-top:130px;
+  padding:40px 20px;
+  max-width:1300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ===== HERO SECCIÓN ===== */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.video{
+  flex:1;
+  min-width:300px;
+}
+
+.video iframe{
+  width:100%;
+  height:300px;
+  border-radius:12px;
+  box-shadow:0 0 25px black;
+}
+
+.titulo{
+  flex:1;
+  text-align:center;
+  min-width:250px;
+}
+
+.titulo h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.titulo p{
+  color:#aaa;
+}
+
+/* ===== PARTES ===== */
+.partes{
+  margin-top:40px;
+  text-align:center;
+}
+
+.partes h2{
+  margin-bottom:15px;
+}
+
+.partes a{
+  display:inline-block;
+  margin:6px;
+  padding:10px 18px;
+  background:#1b1b1b;
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.partes a:hover{
+  background:#ff0000;
+}
+
+/* ===== INFO ===== */
+.info{
+  margin-top:50px;
+  line-height:1.6;
+  text-align:center;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ===== GALERÍA ===== */
+.galeria{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:15px;
+}
+
+.galeria img{
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.galeria img:hover{
+  transform:scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">MS47</div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="categorias.html">Categorías</a>
+      <a href="https://youtube.com/" target="_blank">YouTube</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/" target="_blank">TikTok</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- VIDEO IZQUIERDA -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/8zIDzPJnzpY" allowfullscreen></iframe>
+  </div>
+
+  <!-- TITULO CENTRO -->
+  <div class="titulo">
+    <h1>Nombre del Juego</h1>
+    <p>Serie completa gameplay en español</p>
+  </div>
+
+  <!-- VIDEO DERECHA -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<!-- PARTES -->
+<section class="partes">
+  <h2>Partes del Gameplay</h2>
+  <a href="#">Parte 1</a>
+  <a href="#">Parte 2</a>
+  <a href="#">Parte 3</a>
+  <a href="#">Parte 4</a>
+</section>
+
+<!-- INFO -->
+<section class="info">
+  <h2>Información del Juego</h2>
+  <p>
+  Acá va la descripción del juego, historia, requisitos y detalles importantes.
+  </p>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria">
+  <img src="IMAGEN_1.jpg">
+  <img src="IMAGEN_2.jpg">
+  <img src="IMAGEN_3.jpg">
+</section>
+
+</main>
+
+</body>
+</html>
